@@ -1,22 +1,55 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
-
 int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
+    int Populacao = 35000;
+    int Area = 54500;
+    float PIB = 506694;
+    float Turisticos = 235;
+
+    //CARTA 01
+
+    printf("DIGITE SUA POPULAÇÃO\n");
+    scanf ("%d", &Populacao);
+    printf("A população é: %d\n", Populacao);
+
+    printf("DIGITE SUA ÁREA:\n");
+    scanf("%d", &Area);
+    printf("Sua área é: %d\n", Area);
+
+    printf("DIGITE QUANTOS PONTOS TURISTICOS\n");
+    scanf("%f", &Turisticos);
+    printf("Os pontos turísticos são: %.2f\n", Turisticos);
+
+    printf("Valor do PIB:\n");
+    scanf("%f", &PIB);
+    printf("O PIB é: %.2f\n", PIB);
     
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
+    return 0;
+}
+    int main() {
+        int Populacao = 56899;
+        int Area = 129876;
+        float PIB = 68568;
+        float Turisticos = 193;
     
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+        //CARTA 02
+    
+        printf("DIGITE SUA POPULAÇÃO:\n");
+        scanf("%d", &Populacao);
+        printf("Sua População é: %d\n", Populacao);
+    
+        printf("DIGITE SUA ÁREA:\n");
+        scanf("%d", &Area);
+        printf("Sua Área é: %d\n", Area);
+    
+        printf("DIGITE SEU PIB:\n");
+        scanf("%f", &PIB);
+        printf("Seu PIB é: %.2f\n", PIB);
+        
+        printf("DIGITE QUANTOS PONTOS TURÍSTICOS:\n");
+        scanf("%f", &Turisticos);
+        printf("Os pontos turísticos são: %.2f", Turisticos);
+    
 
     return 0;
 }
