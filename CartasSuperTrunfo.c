@@ -60,9 +60,23 @@ int main() {
     superpoder1 = Populacao1 + Area1 + PIB1 + Turisticos1 + percapita01 + (1 / densidade1);
     superpoder2 = Populacao2 + Area2 + PIB2 + Turisticos2 + percapita02 + (1 / densidade2);
 
-    printf("\n== Super Poder ==\n");
+    printf("\nSuper Poder\n");
     printf("Carta 01: %.2f\n", superpoder1);
     printf("Carta 02: %.2f\n", superpoder2);
+
+    //Comparação dos requisitos:
+   
+    int vencedor1, vencedor2, vencedor3, vencedor4;
+   
+    vencedor1 = Populacao1 > Populacao2;
+    vencedor2 = Area1 > Area2;
+    vencedor3 = PIB1 > PIB2;
+    vencedor4 = Turisticos1 > Turisticos2;
+
+    printf("Ganhador em população: %d\n", vencedor1 ?"Carta01" : "Carta02");
+    printf("Ganhador em Área: %d\n", vencedor2 ?"Carta01" : "Carta02");
+    printf("Ganhador em PIB: %d\n", vencedor3 ?"Carta01" : "Carta02");
+    printf("Ganhador em Pontos turisticos: %d\n", vencedor4 ?"Carta01" : "Carta02");
 
 
     return 0;
